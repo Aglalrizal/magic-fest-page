@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #5E0525;
+    box-sizing: border-box;
+    font-family: 'McLaren';
+}
+ul {
+    list-style: none;
+}
+
+#header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 70px;
+    background-color: #FEF0F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+#header-img {
+    max-width: 200px;
+    height: auto;
+    margin-left: 20px;
+}
+
+#nav-bar ul {
+    list-style: none;
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
+}
+
+#nav-bar li {
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'McLaren', sans-serif;
+}
+
+#nav-bar a {
+    color: #5E0525;
+    text-decoration: none;
+}
+
+#features {
+    padding-left: 20px;
+}
+.container {
+    padding-top: 70px;
+    width: 90%;
+    color: #FEF0F6;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+span{
+    font-size: larger;
+    color: #FFFF00;;
+    transition: color 0.3s ease;
+}
+span:hover{
+    color: #15ff00;
+}
+p {
+    text-align: justify;
+}
+    
+@media (max-width: 560px) {
+    header {
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+    }
+    #nav-bar ul{
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 0;
+    }
+    .container {
+        padding-top: 120px;
+    }
+}
